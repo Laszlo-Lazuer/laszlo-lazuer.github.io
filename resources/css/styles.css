@@ -127,4 +127,30 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22; }
 
+.section-meals {
+  padding: 0; }
+
+.meals-showcase {
+  list-style: none;
+  width: 100%; }
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%; }
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden; }
+
+.meal-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s; }
+
+.meal-photo img:hover {
+  transform: scale(1.03); }
+
 /*# sourceMappingURL=styles.css.map */
