@@ -205,3 +205,45 @@ header {
   opacity: 1;
   transform: scale(1.03);
 }
+
+
+// HOW IT WORKS
+
+.steps-box:first-child { //Refresh on this
+  text-align: right;
+  padding: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child { //Refresh on this
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 20px;
+}
+
+.btn-app img{
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
