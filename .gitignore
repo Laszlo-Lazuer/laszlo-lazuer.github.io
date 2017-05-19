@@ -1,2 +1,4 @@
 //Ignore these
 .sass-cache
+resources/css/styles.css.map
+assets/
