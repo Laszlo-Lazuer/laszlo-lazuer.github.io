@@ -1,0 +1,15 @@
+//First thing to do
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;//white
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif; //Define the backup fonts as well
+  font-size: 20px;
+  font-weight: 300; //Default font-weight definition
+  text-rendering: optimizeLegibility; //Makes fonts render perfectly
+}
