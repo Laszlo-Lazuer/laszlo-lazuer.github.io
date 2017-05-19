@@ -13,3 +13,9 @@ html {
   font-weight: 300; //Default font-weight definition
   text-rendering: optimizeLegibility; //Makes fonts render perfectly
 }
+
+.row {
+  max-width: 1140px;
+  // margin: 0 auto 0 auto; //Center
+  margin: 0 auto; //Shorthand Center
+}
