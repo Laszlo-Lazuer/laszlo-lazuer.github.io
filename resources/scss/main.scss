@@ -1,5 +1,7 @@
 //First thing to do
 
+// Orange Color: #e67e22
+
 // Basic Setup
 * {
   margin: 0;
@@ -23,16 +25,57 @@ html {
   margin: 0 auto; //Shorthand Center
 }
 
-h1 {
-  margin: 0; //Normalize will add a margin
-  margin-bottom: 20px;
-  color: #fff;
-  font-size: 240%; //Double the base font-size
+section {
+  padding: 80px 0;
+}
+
+
+h1,
+h2 {
   font-weight: 300; //Larger text should be lighter
   text-transform: uppercase; //Caps
   letter-spacing: 1px; //Not so compressed
+}
+
+h1 {
+  font-size: 240%; //Double the base font-size
+  color: #fff;
+  margin: 0; //Normalize will add a margin
+  margin-bottom: 20px;
   word-spacing: 4px; //Modern Look
 }
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: ' ';
+  width: 100px;
+  margin: 30px auto 30px auto;
+}
+
+//Paragraphs
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+//Icons
+.icon-big {
+  font-size: 400%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
 
 // Buttons
 
@@ -103,6 +146,7 @@ header {
 .main-nav {
   float: right;
   list-style: none;
+  margin-top: 55px;
 }
 
 .main-nav li {
@@ -110,9 +154,17 @@ header {
   margin-left: 40px;
 }
 
-.main-nav li a {
+.main-nav li a:link,
+.main-nav li a:visited {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
 }
