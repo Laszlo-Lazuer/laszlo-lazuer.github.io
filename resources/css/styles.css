@@ -11,6 +11,16 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility; }
 
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
 .row {
   max-width: 1140px;
   margin: 0 auto; }
@@ -159,6 +169,9 @@ header {
   opacity: 1;
   transform: scale(1.03); }
 
+.section-steps {
+  background-color: #f4f4f4; }
+
 .steps-box:first-child {
   text-align: right;
   padding: 3%;
@@ -173,6 +186,9 @@ header {
 
 .works-step {
   margin-bottom: 50px; }
+
+.works-step:last-of-type {
+  margin-bottom: 80px; }
 
 .works-step div {
   color: #e67e22;

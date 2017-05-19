@@ -17,6 +17,17 @@ html {
   text-rendering: optimizeLegibility; //Makes fonts render perfectly
 }
 
+ //Learn clearfix
+ //If using floats they must be cleared
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 // Reusable Components
 .row {
   max-width: 1140px;
@@ -209,6 +220,10 @@ header {
 
 // HOW IT WORKS
 
+.section-steps {
+  background-color: #f4f4f4;
+}
+
 .steps-box:first-child { //Refresh on this
   text-align: right;
   padding: 3%;
@@ -226,6 +241,10 @@ header {
 
 .works-step {
   margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
 }
 
 .works-step div {
