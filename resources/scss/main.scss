@@ -1,4 +1,6 @@
 //First thing to do
+
+// Basic Setup
 * {
   margin: 0;
   padding: 0;
@@ -14,25 +16,11 @@ html {
   text-rendering: optimizeLegibility; //Makes fonts render perfectly
 }
 
+// Reusable Components
+
 .row {
   max-width: 1140px;
-  // margin: 0 auto 0 auto; //Center
   margin: 0 auto; //Shorthand Center
-}
-
-header {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg); //Make image darker linear gradient
-  background-size: cover;//Lookup
-  background-position: center;//lookup
-  height: 100vh;
-}
-
-.hero-text-box {
-  position: absolute; //Allows Vertical/Horz centering
-  width: 1140px; //Looks like a row, but abs positioned
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -46,38 +34,12 @@ h1 {
   word-spacing: 4px; //Modern Look
 }
 
-// .btn:link,
-// .btn {
-//   //Block and inline elements
-//   //Inline-block is like inline with padding & margin
-//   //Does not force a line-break unlike inline element
-//   //<a> is an inline so we'll make it inline-block
-//
-//   display: inline-block;
-//   padding: 10px 30px;
-//   font-weight: 300;
-//   text-decoration: none;
-//   border-radius: 200px; //Rounded edges
-//   //Link
-//   //anchor in its normal state
-//
-//   &:hover,
-//   &:active {
-//     background-color: #cf6d17;
-//   }
-//
-//   &.btn-full:link,
-//   &.btn-full:visited {
-//     background-color: #e67e22;
-//     border: 1px solid #e67e22;
-//     color: #fff;
-//   }
-//   &.btn-ghost:link,
-//   &.btn-ghost:visited {
-//     border: 1px solid #e67e22;
-//     color: #e67e22;
-//   }
-// }
+// Buttons
+
+//Block and inline elements
+//Inline-block is like inline with padding & margin
+//Does not force a line-break unlike inline element
+//<a> is an inline so we'll make it inline-block
 
 .btn:link,
 .btn:visited {
@@ -86,6 +48,7 @@ h1 {
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn-full:link,
@@ -93,6 +56,7 @@ h1 {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
+  margin-right: 15px;
 }
 
 .btn-ghost:link,
@@ -110,4 +74,21 @@ h1 {
 .btn-ghost:active {
   border: 1px solid #cf6d17;
   color: #fff;
+}
+
+
+// Header
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg); //Make image darker linear gradient
+  background-size: cover;//Lookup
+  background-position: center;//lookup
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute; //Allows Vertical/Horz centering
+  width: 1140px; //Looks like a row, but abs positioned
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
