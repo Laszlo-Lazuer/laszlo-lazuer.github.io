@@ -30,7 +30,35 @@ header {
 
 h1 {
   margin: 0;
+  margin-bottom: 20px;
   color: #fff;
-  font-size: 240%; }
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px; }
+
+.btn:link,
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px; }
+  .btn:link:hover, .btn:link:active,
+  .btn:hover,
+  .btn:active {
+    background-color: #cf6d17; }
+  .btn:link.btn-full:link, .btn:link.btn-full:visited,
+  .btn.btn-full:link,
+  .btn.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff; }
+  .btn:link.btn-ghost:link, .btn:link.btn-ghost:visited,
+  .btn.btn-ghost:link,
+  .btn.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22; }
 
 /*# sourceMappingURL=styles.css.map */
