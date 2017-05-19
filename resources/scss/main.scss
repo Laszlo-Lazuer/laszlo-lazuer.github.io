@@ -46,35 +46,68 @@ h1 {
   word-spacing: 4px; //Modern Look
 }
 
-.btn:link,
-.btn {
-  //Block and inline elements
-  //Inline-block is like inline with padding & margin
-  //Does not force a line-break unlike inline element
-  //<a> is an inline so we'll make it inline-block
+// .btn:link,
+// .btn {
+//   //Block and inline elements
+//   //Inline-block is like inline with padding & margin
+//   //Does not force a line-break unlike inline element
+//   //<a> is an inline so we'll make it inline-block
+//
+//   display: inline-block;
+//   padding: 10px 30px;
+//   font-weight: 300;
+//   text-decoration: none;
+//   border-radius: 200px; //Rounded edges
+//   //Link
+//   //anchor in its normal state
+//
+//   &:hover,
+//   &:active {
+//     background-color: #cf6d17;
+//   }
+//
+//   &.btn-full:link,
+//   &.btn-full:visited {
+//     background-color: #e67e22;
+//     border: 1px solid #e67e22;
+//     color: #fff;
+//   }
+//   &.btn-ghost:link,
+//   &.btn-ghost:visited {
+//     border: 1px solid #e67e22;
+//     color: #e67e22;
+//   }
+// }
 
+.btn:link,
+.btn:visited {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
   text-decoration: none;
-  border-radius: 200px; //Rounded edges
-  //Link
-  //anchor in its normal state
+  border-radius: 200px;
+}
 
-  &:hover,
-  &:active {
-    background-color: #cf6d17;
-  }
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
 
-  &.btn-full:link,
-  &.btn-full:visited {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-  }
-  &.btn-ghost:link,
-  &.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-  }
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color:#e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
 }
