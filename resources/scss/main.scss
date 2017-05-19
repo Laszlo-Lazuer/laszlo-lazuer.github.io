@@ -19,3 +19,24 @@ html {
   // margin: 0 auto 0 auto; //Center
   margin: 0 auto; //Shorthand Center
 }
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/hero.jpg); //Make image darker linear gradient
+  background-size: cover;//Lookup
+  background-position: center;//lookup
+  height: 100vh;
+}
+
+.hero-text-box {
+  position: absolute; //Allows Vertical/Horz centering
+  width: 1140px; //Looks like a row, but abs positioned
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0; //Normalize will add a margin
+  color: #fff;
+  font-size: 240%; //Double the base font-size
+}
