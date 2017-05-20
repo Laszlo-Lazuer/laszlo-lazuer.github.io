@@ -1,0 +1,116 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+html,
+body {
+  font-family: 'myriad-light',Tahoma,sans-serif; //Defining the backup fonts
+  font-size: 10px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/766775/travel-with-visa-2258x1500.jpg);
+  background-position: center 0px;
+  margin: 0;
+  padding: 0;
+}
+
+// Primary Navigation Section
+// --------------------------
+.logo {
+  height: 100px;
+  display: inline;
+  width: auto;
+  // float: right;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.visa-navbar {
+  background: #1a1e5a;
+  background-image: linear-gradient(45deg,#1a1e5a 0,#122d98 100%);
+}
+
+.main-nav {
+  // float:right;
+  display: inline;
+  list-style: none;
+  margin-top: 25px;
+
+  & li{
+    font-size: 1.9rem;
+    display: inline-block;
+
+    & a{
+      // margin-left: 30px;
+    padding: 15px 20px;
+}
+    & a:link,
+    & a:visited {
+        // padding: 8px 0;
+        color: #fff;
+        text-decoration: none;
+        // border-bottom: 2px solid transparent;
+    }
+    & a:hover,
+    & a:active {
+      color: #F7B602;
+    }
+  }
+}
+
+
+.navline {
+  height: 5px;
+  display: block;
+  width: 100%;
+
+  & .nav-indicator-bar {
+    width: 100%;
+    height: 5px;
+    color: #f00;
+    background-image: linear-gradient(45deg,#FA9B01 0,#F2CA13 100%); //Using CSS to draw the golden bar
+  }
+}
+
+
+.container-fluid {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-search {
+  // float:right;
+  color: #f7b600;
+  font-size:4.2rem;
+  margin-bottom: 10px;
+}
+// .icon-big {
+//   // display: inline;
+//
+//   // margin-bottom: 10px;
+// }
+
+// Mobile Navigation Icon
+// ----------------------
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer; //If no href is defined there is no pointer
+  display: none; //Hide for Large-up
+}
+
+// WCAG Compliance
+// ---------------
+[role="button"] {
+  cursor: pointer;
+}

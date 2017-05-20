@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'myriad-light';
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/766775/myriad-light-webfont.woff); }
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+html,
+body {
+  font-family: 'myriad-light',Tahoma,sans-serif;
+  font-size: 10px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/766775/travel-with-visa-2258x1500.jpg);
+  background-position: center 0px;
+  margin: 0;
+  padding: 0; }
+
+.logo {
+  height: 100px;
+  display: inline;
+  width: auto;
+  margin-top: 20px;
+  display: inline-block; }
+
+.visa-navbar {
+  background: #1a1e5a;
+  background-image: linear-gradient(45deg, #1a1e5a 0, #122d98 100%); }
+
+.main-nav {
+  display: inline;
+  list-style: none;
+  margin-top: 25px; }
+  .main-nav li {
+    font-size: 1.9rem;
+    display: inline-block; }
+    .main-nav li a {
+      padding: 15px 20px; }
+    .main-nav li a:link, .main-nav li a:visited {
+      color: #fff;
+      text-decoration: none; }
+    .main-nav li a:hover, .main-nav li a:active {
+      color: #F7B602; }
+
+.navline {
+  height: 5px;
+  display: block;
+  width: 100%; }
+  .navline .nav-indicator-bar {
+    width: 100%;
+    height: 5px;
+    color: #f00;
+    background-image: linear-gradient(45deg, #FA9B01 0, #F2CA13 100%); }
+
+.container-fluid {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+
+.nav-search {
+  color: #f7b600;
+  font-size: 4.2rem;
+  margin-bottom: 10px; }
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none; }
+
+[role="button"] {
+  cursor: pointer; }
+
+/*Media Queries*/
+/*Big tablet to 1200px (widths smaller than the 1140px row)*/
+/*Small tablet to big tablet: from 768px to 1024px*/
+/*Small phones to small tablets: from 481 to 767px*/
+/*Small phones from 0 -> 480px*/
+
+/*# sourceMappingURL=styles.css.map */
