@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -12,15 +13,17 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="sticky">
       <div class="row">
         <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
-        <ul class="main-nav">
+        <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+        <ul class="main-nav js--main-nav">
           <li><a href="#">Food delivery</a></li>
           <li><a href="#">How it works</a></li>
           <li><a href="#">Our cities</a></li>
           <li><a href="#">Sign up</a></li>
         </ul>
+        <a class="mobile-nav-icon js--navicon"><i class="ion-navicon-round"></i></a>
       </div>
     </nav>
     <div class="hero-text-box">
@@ -138,10 +141,10 @@
   <a href="#" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
     </div>
   </section>
-  <!-- Title: How it works - Simple as 1, 2, 3
 
-  	1.	Choose the subscription plan that best fits your needs and sign up today.
-  	2.	Order your delicious meal using our mobile app or website. Or you can even call us!
-  	3.	Enjoy your meal after less than 20 minutes. See you the next time! -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
+
 </html>

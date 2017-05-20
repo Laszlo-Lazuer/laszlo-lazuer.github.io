@@ -117,6 +117,13 @@ header {
   float: left;
   margin-top: 20px; }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0; }
+
 .main-nav {
   float: right;
   list-style: none;
@@ -128,6 +135,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
+  padding: 8px 0;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -138,6 +146,16 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22; }
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none; }
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff; }
 
 .section-features .long-copy {
   margin-bottom: 30px; }
