@@ -297,7 +297,7 @@ nav {
     justify-content: space-between; }
 
   .mobile-nav {
-    background: #fff;
+    background: #aaf;
     margin-top: 0;
     width: 100%;
     height: auto;
@@ -331,32 +331,34 @@ nav {
     .dropdown-mobile::before {
       -webkit-font-smoothing: antialiased;
       font-family: visaFont;
-      content: "\e807b"; } }
-/*Small phones from 0 -> 480px*/
-@media only screen and (max-width: 480px) {
-  .mobile-nav {
-    display: none; }
+      content: "\e807b"; }
 
-  .flex-container {
-    justify-content: space-between; }
-
-  .mobile-nav {
-    background: #f0f;
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-    position: relative;
+  .logo {
     margin-left: 0;
-    margin-right: 0; }
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-right: 0;
+    padding-left: 0; }
+    .logo a {
+      padding-left: 1.5rem;
+      padding-top: 1.3rem;
+      padding-right: 1.5rem;
+      display: block; }
+    .logo img {
+      margin-top: 0; }
 
-  .mobile-nav li {
-    font-size: 1.4rem;
-    font-size: 2.4rem; }
-    .mobile-nav li a:link, .mobile-nav li a:visited {
-      color: #1a1f71;
-      text-decoration: none; }
+  .nav-right {
+    margin-right: 0;
+    margin-top: 1rem;
+    border: 1px solid transparent; }
+    .nav-right .mobile-nav-icon {
+      display: inline-block;
+      padding-top: 0; }
+    .nav-right .sep-line {
+      margin: 0 0 0 1rem; }
 
-  .mobile-menu-btn {
-    display: inline-block; } }
+  .nav-indicator-bar {
+    height: .35rem; } }
+/*Small phones from 0 -> 480px*/
 
 /*# sourceMappingURL=styles.css.map */
