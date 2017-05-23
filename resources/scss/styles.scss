@@ -1,0 +1,215 @@
+// Setup
+* {
+  box-sizing: border-box;
+}
+
+.logo a,
+span {
+  display: inline-block;
+}
+
+
+html,
+body {
+  //Webkit
+  -webkit-tap-highlight-color: transparent;  //sass-lint ignore -webkit-
+  // -webkit-font-smoothing: antialiased;
+  // -webkit-font-feature-settings: "kern" 1;
+  font-family: 'myriad-light', Tahoma, sans-serif; //Defining the backup fonts
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+// //Explore if there is time
+// *::before {
+//   font-family: visaFont;
+// }
+
+a {
+  cursor: pointer;
+}
+
+img {
+  display: inline-block;
+}
+
+// Flexing
+.flex-container {
+  background-image: linear-gradient(45deg, #1a1e5a 0, #122d98 100%);
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+
+nav {
+  min-height: 50px;
+}
+
+// Item: 1 Logo
+.logo {
+  height: auto;
+  order: 1;
+
+  & a {
+    cursor: pointer;
+  }
+
+  & img {
+    display: inline;
+    height: 4rem;
+    margin-top: 20px;
+    width: auto;
+    }
+}
+
+// Item: 2 Links
+.center-nav {
+  order: 2;
+  padding: 18px 0;
+
+  & li {
+    display: inline-block;
+    font-size: 1.9rem;
+    margin: 2rem 1rem;
+    padding-top: 15px 0;
+
+    & a {
+      margin-left: 30px;
+      padding: 15px 20px;
+}
+
+    & a:link,
+    & a:visited {
+        color: rgba(255,255,255,0.85);//#fff;
+        text-decoration: none;
+    }
+
+    & a:hover,
+    & a:active {
+      color: #F7B602;
+    }
+  }
+}
+
+.mobile-nav {
+  list-style: none;
+}
+
+// Item: 3 Search Section
+.nav-right {
+  color: #f7b600;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin-left: 20px;
+  order: 3;
+  padding: 18px 0;
+  padding-top: 1.2rem;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .search-btn,
+  & .mobile-menu-btn {
+    -webkit-font-smoothing: antialiased;
+    color: #f7b600;
+    font-family: visaFont;
+
+    font-size: 3rem;
+    line-height: 1rem;
+    margin-left: 20px;
+    padding-top: 1.2rem;
+  }
+
+
+  & .sep-line {
+    background-color: rgba(255, 255, 255, .25);
+    display: inline-block;
+    height: 4.5rem;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    top: -3px;
+    width: 1px;
+  }
+
+  & .search-btn {
+    // data-background-icon="\f086": "\e827";
+    // background-image: attr( "\e827");
+    &::before {
+
+      content: "\e827";
+      // position: relative;
+    }
+  }
+  & .mobile-menu-btn {
+    color: #fff;
+    height: 3rem;
+    font-weight: lighter;
+    & a {
+      text-decoration: none;
+    }
+
+    &::before {
+      font-family: visaFont;
+      content: "\e800";
+    }
+  }
+
+  & .mobile-menu-close-btn {
+    color: #fff;
+    height: 3rem;
+    font-weight: lighter;
+    & a {
+      text-decoration: none;
+    }
+
+    &::before {
+          -webkit-font-smoothing: antialiased;
+      font-family: visaFont;
+      content: "\e810";
+    }
+  }
+}
+
+// Flexing
+
+.navline {
+  height: .35rem;
+  z-index: 3;
+  width: 100%;
+  position: relative;
+  bottom:0;
+}
+
+.navline .nav-indicator {
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 10px;
+  margin-left: -15px;
+  z-index: 10;
+  transition: 1s;
+}
+.navline .nav-indicator-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: initial 1s;
+  background: url('https://usa.visa.com/etc/designs/rvcom/images/global-nav-indicator-bar.jpg') 2500px 0;
+}
+.nav-indicator-bar {
+  // background-image: linear-gradient(45deg, #FA9B01 0, #F2CA13 100%); //Using CSS to draw the golden bar
+  // color: #f00;
+  // height: 5px;
+  // position: relative;
+  // width: 100%;
+}
+
+// WCAG Compliance
+// ---------------
+[role= 'button'] {
+  cursor: pointer;
+}
