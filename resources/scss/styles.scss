@@ -1,0 +1,222 @@
+// Setup
+* {
+  box-sizing: border-box;
+}
+
+.logo a,
+span {
+  display: inline-block;
+}
+
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;  //sass-lint ignore -webkit-
+  font-family: 'myriad-light', Tahoma, sans-serif; //Defining the backup fonts
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  display: inline-block;
+}
+
+// Flexing
+.flex-container {
+  background-image: $nav-background-gradient;
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+
+nav {
+  min-height: 50px;
+}
+
+// Item: 1 Logo
+.logo {
+  height: auto;
+  order: 1;
+
+  & a {
+    cursor: pointer;
+  }
+
+  & img {
+    display: inline;
+    height: 4rem;
+    margin-top: 20px;
+    width: auto;
+    }
+}
+
+// Item: 2 Links
+.center-nav {
+  order: 2;
+  padding: 18px 0;
+
+  & li {
+    display: inline-block;
+    font-size: 1.9rem;
+    margin: 2rem 1rem;
+    padding-top: 15px 0;
+
+    & a {
+      margin-left: 30px;
+      padding: 15px 20px;
+}
+
+    & a:link,
+    & a:visited {
+      color: $nav-center-link-color;
+      text-decoration: none;
+    }
+
+    & a:hover,
+    & a:active
+    & a:focus {
+      color: $visa-gold;
+    }
+  }
+}
+
+.selected {
+  color: $visa-gold !important;
+}
+
+.search-selected {
+  color: $nav-center-link-color !important;
+}
+
+// Item: 3 Search Section
+.nav-right {
+  color: $visa-gold;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin-left: 20px;
+  order: 3;
+  padding: 18px 0;
+  padding-top: 1.2rem;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .search-btn,
+  & .mobile-menu-btn {
+    -webkit-font-smoothing: antialiased;
+    color: $visa-gold;
+    font-family: $visa-icon-font;
+    font-size: 3rem;
+    line-height: 1rem;
+    margin-left: 20px;
+    padding-top: 1.2rem;
+  }
+
+  & .sep-line {
+    background-color: $nav-right-vertical-separator-color;
+    display: inline-block;
+    height: 4.5rem;
+    margin-left: 1.5rem;
+    margin-right: 3rem;
+    top: -3px;
+    width: 1px;
+  }
+
+  & .search-btn {
+    & a {
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    &::before {
+      content: $search-icon;
+    }
+  }
+
+  & .mobile-menu-btn {
+    color: #fff;
+    font-weight: lighter;
+    height: 3rem;
+
+    & a {
+      text-decoration: none;
+    }
+
+    &::before {
+      content: '\e800';
+      font-family: $visa-icon-font;
+    }
+  }
+
+  & .mobile-menu-close-btn {
+    color: #fff;
+    font-weight: lighter;
+    height: 3rem;
+
+    & a {
+      text-decoration: none;
+    }
+
+    &::before {
+      -webkit-font-smoothing: antialiased;
+      content: $close-icon;
+      font-family: $visa-icon-font;
+    }
+  }
+}
+
+button {
+  &:focus{
+    outline: 0;
+  }
+}
+
+.toggle-search {
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+// Flexing
+.navline {
+  bottom: 0;
+  height: .35rem;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+
+  & .nav-indicator {
+    height: 10px;
+    margin-left: -15px;
+    position: absolute;
+    top: -10px;
+    transition: 1s;
+    width: 30px;
+    z-index: 10;
+    }
+
+  & .nav-indicator-bar {
+    background: url('https://usa.visa.com/etc/designs/rvcom/images/global-nav-indicator-bar.jpg') 2500px 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: initial 1s;
+    width: 100%;
+  }
+}
+
+// WCAG Compliance
+// ---------------
+[role= 'button'] {
+  cursor: pointer;
+}
