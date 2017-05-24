@@ -9,38 +9,19 @@ $(mainNavLink).click(function() {
   var offset = $(this).offset().left, anchors = $(mainNavLink),
   indicatorDefault = 2500, width;
 
-  function offsetCalc(elem){
-    width = $(elem).outerWidth();
-    offset = offset  + (width/2);
-    $(navIndicator).css({"display":"block","left":offset});
-  }
-
   if ($(this).hasClass(linkActiveSelector)){
     $(mainNavLink).removeClass(linkActiveSelector);
     $(navIndicator).css({"display":"none","left":indicatorDefault});
   } else {
-    offsetCalc($(this));
+    width = $(this).outerWidth();
+    offset = offset  + (width/2);
+    $(navIndicator).css({"display":"block","left":offset});
+    // offsetCalc($(this));
     $(mainNavLink).removeClass(linkActiveSelector);
     $('.js--search span').removeClass('search-selected');
     $(this).addClass(linkActiveSelector);
   }
 });
-
-  $('.js--main-nav li a').click(function() {
-    console.log("I'm In");
-    var offset = $( this ).offset().left;
-    var width = $(this).width();
-    var anchors = $('.js--main-nav li a');
-    var previous;
-    var indicatorDefault = 2500;
-
-    console.log(offset);
-    offset = offset  + width/2;
-    console.log("offset: " + offset);
-    $('.nav-indicator').css({"display":"block","left":offset});
-      $('.js--main-nav li a').removeClass("selected");
-      $(this).addClass('selected');
-  });
 
   $('.js--navicon').click(function() {
     const TRANSITION_DURATION = 350;
@@ -70,11 +51,15 @@ $(mainNavLink).click(function() {
 $('.js--search').click(function() {
  if ($('.js--search span').hasClass('search-selected')) {
    $('.js--search span').removeClass('search-selected');
+   $(navIndicator).css({"display":"none","left":indicatorDefault,"visibility":"none"});
+
 } else {
   width = $('.js--search span').outerWidth();
   var offset = $(this).offset().left  + (width/2);
   console.log(offset);
+  if ($(window).width() > 767){
   $('.nav-indicator').css({"display":"block","left":offset});
+  }
   $(mainNavLink).removeClass(linkActiveSelector);
   $('.js--search span').addClass('search-selected');
 }

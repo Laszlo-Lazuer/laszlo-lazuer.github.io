@@ -370,10 +370,16 @@ button:focus {
         display: inline-block; }
 
   .navline {
-    height: .35rem; } }
+    height: .35rem; }
+
+  .mobile-nav {
+    background-color: transparent; } }
 /*Small phones from 0 -> 480px*/
 @media only screen and (max-width: 480px) {
   .logo a {
-    padding-bottom: .5rem; } }
+    padding-bottom: .5rem; }
+
+  .mobile-nav {
+    background-color: transparent; } }
 
 /*# sourceMappingURL=styles.css.map */

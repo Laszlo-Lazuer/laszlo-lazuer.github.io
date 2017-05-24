@@ -301,6 +301,9 @@
   .navline {
     height: .35rem;
   }
+  .mobile-nav {
+    background-color: transparent;
+  }
 }
 
 /*Small phones from 0 -> 480px*/
@@ -309,5 +312,8 @@
     & a {
       padding-bottom: .5rem;
     }
+  }
+  .mobile-nav {
+    background-color: transparent;
   }
 }
