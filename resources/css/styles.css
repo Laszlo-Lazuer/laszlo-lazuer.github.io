@@ -206,7 +206,10 @@ button:focus {
       padding-top: 0; }
       .nav-right .search-btn a {
         cursor: pointer;
-        display: inline-block; } }
+        display: inline-block; }
+
+  .navline {
+    height: .5rem; } }
 @media only screen and (max-width: 1199px) {
   .mobile-nav {
     display: none; }
@@ -290,7 +293,10 @@ button:focus {
       margin-top: 1.3rem; }
       .nav-right .search-btn a {
         cursor: pointer;
-        display: inline-block; } }
+        display: inline-block; }
+
+  .navline {
+    height: .4rem; } }
 @media only screen and (max-width: 767px) {
   .navigation {
     border-radius: 0; }
@@ -363,7 +369,7 @@ button:focus {
         cursor: pointer;
         display: inline-block; }
 
-  .nav-indicator-bar {
+  .navline {
     height: .35rem; } }
 /*Small phones from 0 -> 480px*/
 @media only screen and (max-width: 480px) {

@@ -70,6 +70,9 @@
       }
     }
   }
+  .navline {
+    height: .5rem;
+  }
 }
 
 //Big tablet to 1200px (widths smaller than the 1140px row)
@@ -193,6 +196,9 @@
       }
     }
   }
+  .navline {
+    height: .4rem;
+  }
 }
 
 
@@ -292,7 +298,7 @@
     }
   }
 
-  .nav-indicator-bar {
+  .navline {
     height: .35rem;
   }
 }
@@ -300,18 +306,8 @@
 /*Small phones from 0 -> 480px*/
 @media only screen and (max-width: 480px) {
   .logo {
-    // margin: 0 0 1rem;
-    // padding-left: 0;
-    // padding-right: 0;
-    // padding-top: .5rem;
-
-
     & a {
-      // display: block;
       padding-bottom: .5rem;
-      // padding-left: 1.5rem;
-      // padding-right: 1.5rem;
-      // padding-top: 1.3rem;
     }
   }
 }
