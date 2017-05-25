@@ -65,7 +65,6 @@ $(document).ready(function() {
   });
 
   $(window).resize(function(){
-    // if ($(navActiveSelector).outerWidth() > 0){
     if ($(window).width() > 767 && ($(navActiveSelector).hasClass(linkActiveSelector))){
     var width = $(navActiveSelector).outerWidth();
     var offset = $(navActiveSelector).offset().left  + (width/2);
