@@ -1,4 +1,18 @@
-// Setup
+// Place holders
+// Accessibility/Screen Readers
+%offscreen {
+  //Recommended approach
+  //https://www.paciellogroup.com/blog/2012/05/html5-accessibility-chops-hidden-and-aria-hidden/
+  clip: rect(1px 1px 1px 1px); //IE 6/7
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; //added line
+  width: 1px;
+}
+
+// Main Scss
 * {
   box-sizing: border-box;
 }
@@ -8,7 +22,6 @@ span {
   display: inline-block;
 }
 
-
 html,
 body {
   -webkit-tap-highlight-color: transparent;  //sass-lint ignore -webkit-
@@ -17,6 +30,9 @@ body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
+  & h6 {
+    @extend %offscreen;
+  }
 }
 
 a {
@@ -37,6 +53,10 @@ img {
 
 nav {
   min-height: 50px;
+
+  & h6 {
+    @extend %offscreen;
+  }
 }
 
 // Item: 1 Logo

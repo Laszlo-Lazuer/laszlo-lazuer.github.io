@@ -7,6 +7,16 @@
   src: url("../../vendor/css/visaFont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+html h6,
+body h6, nav h6 {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; }
+
 * {
   box-sizing: border-box; }
 
@@ -269,7 +279,6 @@ button:focus {
 
   .center-nav {
     margin: 0;
-    display: inline-block;
     padding: .5rem 0;
     padding-right: 2rem; }
     .center-nav li {
