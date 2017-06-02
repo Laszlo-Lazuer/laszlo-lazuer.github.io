@@ -2,3 +2,4 @@
 .sass-cache
 resources/css/styles.css.map
 assets/
+.DS_Store
