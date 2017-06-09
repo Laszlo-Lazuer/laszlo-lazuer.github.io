@@ -13,6 +13,14 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility; }
 
+iframe {
+  display: block;
+  width: 70%;
+  height: 200px;
+  transform: scale(1.5);
+  margin-left: auto;
+  margin-right: auto; }
+
 .clearfix {
   zoom: 1; }
   .clearfix::after {

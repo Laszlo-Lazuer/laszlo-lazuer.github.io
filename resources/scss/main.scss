@@ -31,6 +31,16 @@ body {
   text-rendering: optimizeLegibility; //Makes fonts render perfectly
 }
 
+//iFrmae
+iframe {
+  display: block;
+  width: 70%;
+  height: 200px ;
+  transform: scale(1.5);
+  margin-left:auto;
+  margin-right: auto;
+}
+
 //Learn clearfix
 //If using floats they must be cleared
 .clearfix {
