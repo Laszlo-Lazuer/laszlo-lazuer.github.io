@@ -76,8 +76,7 @@ h2 {
 .btn:hover, .btn:active {
   background-color: #cf6d17; }
 
-.btn-full:link,
-.btn-full:visited {
+.btn-full:link, .btn-full:visited {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;

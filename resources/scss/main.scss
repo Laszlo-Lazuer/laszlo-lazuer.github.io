@@ -89,7 +89,6 @@ h2 {
   }
 }
 
-
 //Paragraphs
 .long-copy {  //Research
   line-height: 145%;
@@ -123,28 +122,27 @@ h2 {
     transition: background-color .2s, border .2s, color .2s;
   }
 
-&:hover,
+  &:hover,
   &:active {
     background-color: $strong-orange;
   }
 }
 
-
-.btn-full:link,
-.btn-full:visited {
-  background-color: $vivid-orange;
-  border: 1px solid $vivid-orange;
-  color: $white;
-  margin-right: 15px;
+.btn-full {
+  &:link,
+  &:visited {
+    background-color: $vivid-orange;
+    border: 1px solid $vivid-orange;
+    color: $white;
+    margin-right: 15px;
+  }
 }
-
-
 
 .btn-ghost {
   &:link,
   &:visited {
     border: 1px solid $vivid-orange;
-    color:$vivid-orange;
+    color: $vivid-orange;
   }
 
   &:hover,
@@ -154,8 +152,6 @@ h2 {
   }
 
 }
-
-
 
 // Header
 header {
@@ -277,7 +273,6 @@ header {
   }
 }
 
-
 .meal-photo {
   background: $black;
   margin: 0; //Normalize adds some margin
@@ -300,7 +295,7 @@ header {
 
 // HOW IT WORKS
 .section-steps {
-  background-color: #f4f4f4;
+  background-color: $very-light-gray;
 }
 
 .steps-box { //Refresh on this
