@@ -1,4 +1,16 @@
-// Orange Color: #e67e22
+//Variables
+//Colors
+$black: #000;
+$vivid-orange: #e67e22;
+$white: #fff;
+$very-dark-gray: #555;
+$strong-orange: #cf6d17;
+$very-light-gray: #f4f4f4;
+
+$body-background-color: $white;
+$border-color: $vivid-orange;
+$body-text-color: $very-dark-gray;
+$h1-color: $white;
 
 //First thing to do
 // Basic Setup
@@ -10,8 +22,8 @@
 
 html,
 body {
-  background-color: #fff;//white
-  color: #555;
+  background-color: $body-background-color;//white
+  color: $body-text-color;
   font-family: 'Lato', 'Arial', sans-serif; //Define the backup fonts as well
   font-size: 20px;
   font-weight: 300; //Default font-weight definition
@@ -54,7 +66,7 @@ h2 {
 }
 
 h1 {
-  color: #fff;
+  color: $h1-color;
   font-size: 240%; //Double the base font-size
   margin: 0; //Normalize will add a margin
   margin-bottom: 20px;
@@ -68,7 +80,7 @@ h2 {
   word-spacing: 2px;
 
   &::after {
-    background-color: #e67e22;
+    background-color: $vivid-orange;
     content: ' ';  //Research why it is a space
     display: block;
     height: 2px;
@@ -87,7 +99,7 @@ h2 {
 
 //Icons
 .icon-big {
-  color: #e67e22;
+  color: $vivid-orange;
   display: block;
   font-size: 400%;
   margin-bottom: 10px;
@@ -113,16 +125,16 @@ h2 {
 
 &:hover,
   &:active {
-    background-color: #cf6d17;
+    background-color: $strong-orange;
   }
 }
 
 
 .btn-full:link,
 .btn-full:visited {
-  background-color: #e67e22;
-  border: 1px solid #e67e22;
-  color: #fff;
+  background-color: $vivid-orange;
+  border: 1px solid $vivid-orange;
+  color: $white;
   margin-right: 15px;
 }
 
@@ -131,14 +143,14 @@ h2 {
 .btn-ghost {
   &:link,
   &:visited {
-    border: 1px solid #e67e22;
-    color:#e67e22;
+    border: 1px solid $vivid-orange;
+    color:$vivid-orange;
   }
 
   &:hover,
   &:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
+    border: 1px solid $strong-orange;
+    color: $white;
   }
 
 }
@@ -192,7 +204,7 @@ header {
       &:link,
       &:visited {
         border-bottom: 2px solid transparent;
-        color: #fff;
+        color: $white;
         font-size: 90%;
         padding: 8px 0; //???
         text-decoration: none;
@@ -202,7 +214,7 @@ header {
 
       &:hover,
       &:active {
-        border-bottom: 2px solid #e67e22;
+        border-bottom: 2px solid $vivid-orange;
       }
     }
   }
@@ -216,7 +228,7 @@ header {
   margin-top: 30px;
 
   & i {
-    color: #fff;
+    color: $white;
     font-size: 200%;
   }
 }
@@ -267,7 +279,7 @@ header {
 
 
 .meal-photo {
-  background: #000;
+  background: $black;
   margin: 0; //Normalize adds some margin
   overflow: hidden;
   width: 100%;
@@ -316,9 +328,9 @@ header {
   }
 
   & div {
-    border: 2px solid #e67e22;
+    border: 2px solid $border-color;
     border-radius: 50%;
-    color: #e67e22;
+    color: $vivid-orange;
     display: inline-block;
     float: left;
     font-size: 150%;
