@@ -32,14 +32,14 @@ body {
 }
 
 //iFrmae
-iframe {
-  display: block;
-  width: 70%;
-  height: 200px ;
-  transform: scale(1.5);
-  margin-left:auto;
-  margin-right: auto;
-}
+// iframe {
+//   display: block;
+//   width: 70%;
+//   height: 200px ;
+//   transform: scale(1.5);
+//   margin-left:auto;
+//   margin-right: auto;
+// }
 
 //Learn clearfix
 //If using floats they must be cleared
@@ -352,4 +352,45 @@ header {
     margin-right: 10px;
     width: auto;
   }
+}
+
+
+//Laszlo
+//Modal
+
+.modalWindow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 99999;
+  opacity:0;
+  // pointer-events: none;
+  text-align:center;
+
+  &:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: 500px;
+    width: 75vw;
+    position: relative;
+    margin: 5vh auto;
+    background: #fff; //Demo
+  }
+}
+
+div > iframe {
+  display: block; //Helps center
+  // transform: scale(1.25);
+  border: none;
+  margin: 5vh auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  height: 75vh;
+  width: 60vw;
 }

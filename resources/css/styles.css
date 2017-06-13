@@ -13,14 +13,6 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility; }
 
-iframe {
-  display: block;
-  width: 70%;
-  height: 200px;
-  transform: scale(1.5);
-  margin-left: auto;
-  margin-right: auto; }
-
 .clearfix {
   zoom: 1; }
   .clearfix::after {
@@ -216,5 +208,32 @@ header {
   height: 50px;
   margin-right: 10px;
   width: auto; }
+
+.modalWindow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  opacity: 0;
+  text-align: center; }
+  .modalWindow:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modalWindow > div {
+    width: 500px;
+    width: 75vw;
+    position: relative;
+    margin: 5vh auto;
+    background: #fff; }
+
+div > iframe {
+  display: block;
+  border: none;
+  margin: 5vh auto;
+  height: 75vh;
+  width: 60vw; }
 
 /*# sourceMappingURL=styles.css.map */
