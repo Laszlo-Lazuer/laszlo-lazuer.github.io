@@ -394,3 +394,35 @@ div > iframe {
   height: 75vh;
   width: 60vw;
 }
+
+
+//modal
+.modalWindow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 99999;
+  opacity:0;
+  pointer-events: none;
+  text-align:center;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  & > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    background: #fff;
+  }
+}
+
+iframe {
+  height: 1000px;
+  width: 1000px;
+}
